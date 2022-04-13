@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio JS </title>
     <link rel="stylesheet" href="/images/favicon-1.ico" type="image/x-icon"> 
 
     <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -16,6 +15,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.css">
 
     <link rel="stylesheet" href="style.css">
+    <title>Portfolio responsive </title>
+</head>
     
 <body>
     
@@ -27,9 +28,9 @@
             </div>
             <div class="menu">
                 <div class="top-nav">
-                 <div class="top">
-                     <h1>Khellaf <span>R</span>achedi</h1>
-                 </div>
+                 <div class="logo">
+                     <h1><span>K</span>hellaf <span>R</span>achedi</h1>
+                 </div>  
                  <div class="close">
                      <i class="fas fa-times"></i>
                  </div>
@@ -37,7 +38,7 @@
                       <ul class="nav-list">
                         <li class="nav-item">
                             
-                           <a href="#home" class="nav-link scroll-link">Accueil</a>
+                           <a href="#home" class="nav-link scroll-link ">Accueil</a>
                            <a href="#about" class="nav-link scroll-link">Mon parcours</a>
                            <a href="#skills" class="nav-link scroll-link">Mes compétences</a>
                            <a href="#blog" class="nav-link scroll-link">Mes projets</a>
@@ -53,18 +54,19 @@
         </nav>
         <video id="background-video" autoplay loop muted>
 
-            <source src="https://assets.codepen.io/6093409/river.mp4" type="video/mp4">
+            <source src="/images/tunnel.mp4" type="video/mp4">
             
             </video>
         <div class="hero">
-            <h1>Khellaf Rachedi</h1>
-            <h4>un web développeur  <span id="type1" class="typeit"></span> junior</h4>
+            <h1><span></span>Khellaf Rachedi</h1>
+            <h4>Un web développeur  <span id="type1" class="typeit"></span> junior</h4>
+            <h4>Actuellement à la recherche d'une alternance pour septembre 2022</h4>
             <a href="#">Hire me</a>
         </div>
         <div class="icons">
-            <span><i class="fab fa-linkedin"></i></span>
-            <span><i class="fab fa-github"></i></span>
-            <span><i class="fab fa-google"></i></span>
+            <a href="www.linkedin.com/in/khellaf-rachedi-850974133"><span><i class="fab fa-linkedin"></i></span></a>
+            <a href="https://github.com/khellaf-rachedi?tab=repositories"><span><i class="fab fa-github"></i></span></a>
+            <a href="mailto:khellaf.rachedi@laplateforme.io"><span><i class="fab fa-google"></i></span></a>
         </div>
         <div class="control">
             <div class="widget">
@@ -76,6 +78,9 @@
                 <span data-id="#ff4600"></span>
                 <span data-id="#ce00ff"></span>
                 <span data-id="#03ffc7"></span>
+                <span data-id="#33b3e6"></span>
+                <span data-id="#9eff03"></span>
+                <span data-id="navy"></span>
             </div>
         </div>
     </header>
@@ -91,20 +96,19 @@
             </div>
 
             <div class="right" data-aos="fade-left" data-aos-duration="1500">
-                <h1><b><i>"Un secteur en perpetuelle évolution" <span id="type2"></span></i></b></h1>
+                <h1><b><i>"Un secteur en perpétuelle évolution" <span id="type2"></span></i></b></h1>
+                <div class="justifier">
                 <p>
-                    Après avoir obtenu mon baccalauréat compatabilité et finance d'entreprise,
-                    j'ai intégré une classe préparatoire aux Grandes Ecoles de commerce option 
-                    économique commerciale. 
-                    A l'issue des concours, j'ai intégré le programme Master Grande Ecole de Montpellier
-                    Business School.
-                    Par la suite, j'ai pris la décision de me reformer dans le développement web car 
-                    j'ai toujours eu une appétence pour la conception de sites web sans oublier que ce 
-                    secteur est en perpetuelle évolution ce qui stimule continuellement ma curiosité.
-                    De ce fait, j'ai intégré la Coding School de La Plateforme à Marseille.
-                    Ce cursus m'a permis de confirmer mon envie d'évoluer dans ce secteur.
+                    Après avoir obtenu mon baccalauréat comptabilité et finance d'entreprise, j'ai intégré 
+                    une classe préparatoire aux Grandes Écoles de commerce option économique commerciale.<br>
+                    À l'issue des concours, j'ai intégré le programme Master Grande École de Montpellier Business School.<br>
+                     Par la suite, j'ai pris la décision de me reformer dans le développement web, car j'ai toujours eu une 
+                     appétence pour la conception de sites web sans oublier que ce secteur est en perpétuelle évolution ce qui 
+                     stimule continuellement ma curiosité.<br> De ce fait, j'ai intégré la Coding School de La Plateforme à Marseille. 
+                     Ce cursus m'a permis de confirmer mon envie d'évoluer dans ce secteur.
                 </p>
-                <a href="#" class="btn">Téléchargez mon CV</a>
+                </div>
+                <a href="/images/CV Khellaf RACHEDI.pdf" download class="btn">Téléchargez mon CV</a>
             </div>
 
 
@@ -189,7 +193,7 @@
         <ul class="glide__slides">
             <li class="glide__slide">
               <div class="team">
-                  <img src="/images/blog-1.jpg" alt="">
+                  <a href="https://github.com/khellaf-rachedi/btp"><img src="/images/blog-1.jpg" alt=""></a>
               </div>
               <h3 class="titre-projet">Site BTP</h3>
               <div class="texte-projets">
@@ -238,6 +242,18 @@
 
               <li class="glide__slide">
                 <div class="team">
+                    <img src="/images/blog-3.jpg" alt="">
+                </div>
+                <h3 class="titre-projet">Jeu du pendu</h3>
+                <div class="texte-projets">
+                <p>Création du jeu du pendu codé en PHP mais également avec l'utilisation de HTML/CSS.</p>
+                </div>
+              </li>
+
+
+
+              <li class="glide__slide">
+                <div class="team">
                     <img src="/images/blog-2.jpg" alt="">
                 </div>
                 <h3 class="titre-projet">Boutique en ligne</h3>
@@ -253,66 +269,84 @@
 </div>
 </section>
 
+
 <section class="section contact" id="contact">
     <div class="title">
-        <h1>Contact</h1>
+      <h1>Me contacter</h1>
     </div>
+
     <div class="contact-center container">
-<div class="left" data-aos="fade-down" data-aos-duration="1500" >
-    <h2>Mes coordonnées</h2>
-    <p><i class="fa fa-phone"></i>  06 20 83 95 95</p>
-    <p><i class="fa fa-linkedin-square" aria-hidden="true"></i></p>
-        <p><i class="fa fa-github-square" ></i>Mon Github</p>
-</div>
-<span class="icon"><i class="fas fa-user"></i>  Khellaf RACHEDI</span>
-<div>
-    <span class="icon"><i class="fas fa-envelope"> khellaf.rachedi@laplateforme.io</i></span>
-</div>
+      <div class="left" data-aos="fade-dowm" data-aos-duration="1500">
+        <h2>Mes coordonnées</h2><br>
+        <div>
+          <span class="icon"><i class="fas fa-user"></i></span>
+          <span class="content">
+            <h3>Nom et prénom</h3>
+            <span>RACHEDI Khellaf</span>
+          </span>
+        </div>
+
+        <div>
+          <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+          <span class="content">
+            <h3>Localisation</h3>
+            <span>Marseille, France</span>
+          </span>
+        </div>
+
+
+        <div>
+            <span class="icon"><i class="fas fa-phone"></i></span>
+            <span class="content">
+              <h3>Téléphone</h3>
+              <span>06 20 83 95 95</span>
+            </span>
+          </div>
+
+        <div>
+          <span class="icon"><i class="fas fa-envelope"></i></span>
+          <span class="content">
+            <h3>Email</h3>
+            <span>khellaf.rachedi@plateforme.io</span>
+          </span>
+        </div>
+        <div>
+            <a href="www.linkedin.com/in/khellaf-rachedi-850974133" ><span><i class="fab fa-linkedin" style="font-size:3rem"></i></span> &ensp; Mon profil Linkedin</a>
+        </div>
+              <div>
+                  <a href="https://github.com/khellaf-rachedi?tab=repositories" ><span><i class="fab fa-github" style="font-size:3rem"></i></span> &ensp; Mon Github</a>
+              </div> 
+                
+      </div>
+
+      <div class="right" data-aos="fade-up" data-aos-duration="1500">
+        <form action="https://formsubmit.co/5ba19175cf93cd200c2929b87a50f3b1" method="POST" class="form">
+        <h2>Me contacter</h2>
+    
+    <input type="text" placeholder="Nom" required>
+    <input type="email" name="email" placeholder="Adresse mail" required>
+    
+    <textarea name="message" id="" cols="30" rows="10" placeholder="Votre message"></textarea>
+    <div style="text-align:center;">
+    <button type="submit" class="message">Envoyer mon message</button>
+    <input type="hidden" name="_captcha" value="false" />
+    <input
+                                type="hidden"
+                                name="_next"
+                                value="http://localhost/images/portfolio.html"
+                              />
+        </form>
+      </div>
     </div>
-<div class="right" data-aos="fade-up" data-aos-duration="1500">
-    <form action="https://formsubmit.co/khellaf.rachedi@laplateforme.io" method="POST" class="form">
-    <h2>Me contacter</h2>
-
-<input type="text" placeholder="Nom" required>
-<input type="email" name="email" placeholder="Adresse mail" required>
-
-<textarea name="message" id="" cols="30" rows="10" placeholder="Votre message"></textarea>
-<div style="text-align:center;">
-<button type="submit" class="btn btn-form">Envoyer</button>
-</div>
-</form>
-</div>
-</section>
-
-
-
-</div>
-
-   
+  </section>
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<footer>
+    <p><span>Khellaf Rachedi</span> | &copy; 2022 tous droits réservés</p>
+</footer>
     <!-- scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <!-- TypeIt -->
