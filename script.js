@@ -126,7 +126,7 @@ new TypeIt("#type2", {
   .type("", { delay: 400 })
   .pause(500)
   .delete(9)
-  .type("Developer", { delay: 400 })
+  .type("La Plateforme_ Marseille", { delay: 400 })
   .pause(500)
   .delete(9)
   .go();
