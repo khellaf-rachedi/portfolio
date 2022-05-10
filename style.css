@@ -500,6 +500,7 @@ li {
   height: 61rem;
   width: 44rem;
   object-fit: cover;
+  /* margin-left:30%; */
 }
 
 .right h1 {
@@ -592,7 +593,7 @@ a.btn:active,
   }
 }
 
-/* Services */
+/* Services/projet */
 
 .theme {
     background-color: #0cbaba;
@@ -659,30 +660,43 @@ a.btn:active,
 }
 
 .skills-box h4 {
-  font-size: 2.1rem;
-  color: #888;
-  font-weight: 500;
+  margin: 15px 0;
+  box-shadow: 9.91px 9.91px 15px #D9DADE, -9.91px -9.91px 15px #FFFFFF,inset 9.91px 9.91px 15px #D9DADE, inset -9.91px -9.91px 15px #FFFFFF;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 50px;
+  border:4px solid #ebecf0;
+  color:#6d7587 ;
+  transition: 0.2s;
+  cursor: pointer;
 }
 
-.skills-box .skills-ilt {
+
+.skills-box h4:hover {
+  background: #EEF0F4;
+   box-shadow: 9.91px 9.91px 15px #D9DADE, -9.91px -9.91px 15px #FFFFFF;
+}
+
+
+/* .skills-box .skills-ilt {
   width: 100%;
   position: relative;
   height: .4rem;
   background-color: #ccc;
   border-radius: .5rem;
-}
+} */
 
-.skills-box .skills-bar {
+/* .skills-box .skills-bar {
   background-color: var(--customColor);
   height: 1.1rem;
-}
+} */
 
 .espacement{
-    height: 5.1rem;
+    height: 5.5rem;
     font-size: 125%;
 }
 
-.skills-box .html {
+/* .skills-box .html {
   width: 90%;
 }
 
@@ -700,15 +714,15 @@ a.btn:active,
 
 .skills-box .php {
     width: 50%;
-  }
+  } */
 
 
-.skills-box span {
+/* .skills-box span {
   position: absolute;
   bottom: 10%;
   right: 0;
   font-size: 1.4rem;
-}
+} */
 
 .skills-center {
   display: grid;
@@ -800,6 +814,25 @@ a.btn:active,
 }
 
 /* Contact */
+
+.test{
+  font-size: 150%;
+  color:black;
+  font-weight: bold;
+}
+
+
+.error{
+  font-size: 150%;
+  color:black;
+  font-weight: bold;
+}
+
+#errorname{
+  font-size: 150%;
+  color:black;
+  font-weight: bold;
+}
 
 .contact-center{
   display: grid;
