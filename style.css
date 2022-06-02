@@ -47,7 +47,7 @@
 
 
 .right{
-    padding-left:15%;
+    padding-left:0%;
 }
 .texte-projets{
     color: white;
@@ -529,6 +529,7 @@ a.btn,
   transition: all 300ms ease-in-out;
   margin: 0 auto;
   /* display: block; */
+	margin-left:22%;
 }
 
 
@@ -543,6 +544,13 @@ a.btn,
   transition: all 300ms ease-in-out;
   margin: 0 auto;
   margin-left: -18%;
+  cursor: pointer;
+}
+
+.message:hover{
+	background-color:black;
+	color:white;
+	transition: 0.2s;
 }
 
 a.btn:hover,
@@ -574,6 +582,7 @@ a.btn:active,
     height: 40rem;
     max-width: 25rem;
   }
+  	
 }
 
 
@@ -692,9 +701,16 @@ a.btn:active,
 } */
 
 .espacement{
-    height: 5.5rem;
+    height: 6.5rem;
     font-size: 125%;
 }
+
+@media only screen and (max-width: 768px){
+.espacement{
+		font-size:1.2rem;
+	}
+}
+	
 
 /* .skills-box .html {
   width: 90%;
@@ -822,16 +838,13 @@ a.btn:active,
 }
 
 
-.error{
-  font-size: 150%;
-  color:black;
-  font-weight: bold;
-}
+
 
 #errorname{
-  font-size: 150%;
-  color:black;
+  font-size: 85%;
+  color:green;
   font-weight: bold;
+	padding-right:16%;
 }
 
 .contact-center{

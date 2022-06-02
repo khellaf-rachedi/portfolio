@@ -14,6 +14,7 @@
     <!-- Glidejs -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.css" />
+    <script src="https://kit.fontawesome.com/542f5b64de.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="style.css">
     <title>Portfolio responsive </title>
@@ -65,7 +66,7 @@
             <a href="#contact">Me contacter</a>
         </div>
         <div class="icons">
-            <a href="www.linkedin.com/in/khellaf-rachedi-850974133"><span><i class="fab fa-linkedin"></i></span></a>
+            <a href="https://www.linkedin.com/in/khellaf-rachedi-850974133"><span><i class="fab fa-linkedin"></i></span></a>
             <a href="https://github.com/khellaf-rachedi?tab=repositories"><span><i class="fab fa-github"></i></span></a>
             <a href="mailto:khellaf.rachedi@laplateforme.io"><span><i class="fab fa-google"></i></span></a>
         </div>
@@ -97,15 +98,15 @@
             </div>
 
             <div class="right" data-aos="fade-left" data-aos-duration="1500">
-                <h1><b><i>"Un secteur en perpétuelle évolution" <span id="type2"></span></i></b></h1>
+                <h1><b><i>"Un secteur en perpétuelle évolution" <br><span id="type2"></span></i></b></h1>
                 <div class="justifier">
                 <p>
                     Après avoir obtenu mon baccalauréat comptabilité et finance d'entreprise, j'ai intégré 
                     une classe préparatoire aux Grandes Écoles de commerce option économique commerciale.<br>
                     À l'issue des concours, j'ai intégré le programme Master Grande École de Montpellier Business School.<br>
                      Par la suite, j'ai pris la décision de me former dans le développement web, car j'ai toujours eu une 
-                     appétence les métiers du numérique et notamment la conception de sites web. 
-					 Sans oublier que ce secteur est en perpétuelle évolution ce qui 
+                     appétence pour les métiers du numérique et notamment la conception de sites web. 
+					          Sans oublier que ce secteur est en perpétuelle évolution ce qui 
                      stimule continuellement ma curiosité.<br> De ce fait, j'ai intégré la Coding School de La Plateforme à Marseille. 
                      Ce cursus m'a permis de confirmer mon envie d'évoluer dans ce secteur.
                 </p>
@@ -145,6 +146,10 @@
       
     <div class="skills-box">
         <h4>SQL</h4>
+    </div>
+		   
+    <div class="skills-box">
+        <h4>Bootstrap</h4>
     </div>
     
     </div>
@@ -213,7 +218,7 @@
 
               <li class="glide__slide">
                 <div class="team">
-                <a href="https://github.com/roehan-abdulrauf/boutique/tree/teamwork"><img src="blog-1.jpg" alt="image du site accueil projet blog"></a>
+                <a href="https://khellaf-rachedi.students-laplateforme.io/boutique/index.php"><img src="https://zupimages.net/up/22/20/jbuk.jpg" alt="image du site accueil projet blog"></a>
                 </div>
                 <h3 class="titre-projet">Boutique en ligne</h3>
                 <div class="texte-projets">
@@ -229,7 +234,7 @@
 
 <section class="section contact" id="contact">
     <div class="title">
-      <h1>Me contacter</h1>
+      <h1>Contact</h1>
     </div>
 
     <div class="contact-center container">
@@ -268,7 +273,7 @@
           </span>
         </div>
         <div>
-            <a href="www.linkedin.com/in/khellaf-rachedi-850974133" ><span><i class="fab fa-linkedin" style="font-size:3rem"></i></span> &ensp; Mon profil Linkedin</a>
+            <a href="https://www.linkedin.com/in/khellaf-rachedi-850974133" ><span><i class="fab fa-linkedin" style="font-size:3rem"></i></span> &ensp; Mon profil Linkedin</a>
         </div>
               <div>
                   <a href="https://github.com/khellaf-rachedi?tab=repositories" ><span><i class="fab fa-github" style="font-size:3rem"></i></span> &ensp; Mon Github</a>
@@ -280,12 +285,12 @@
         <form action="https://formsubmit.co/5ba19175cf93cd200c2929b87a50f3b1" method="POST" class="form">
         <h2>Me contacter</h2>
     
-    <input type="text" placeholder="Nom" required>
-    <input type="email" name="email" placeholder="Adresse mail" required>
+    <input type="text" id="name" placeholder="Nom" required>
+    <input type="email" name="email" id="email" placeholder="Adresse mail" required>
     
-    <textarea name="message" id="" cols="30" rows="10" placeholder="Votre message"></textarea>
+    <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message"></textarea>
     <div style="text-align:center;">
-    <button type="submit" class="message">Envoyer mon message</button>
+    <button type="submit" class="message" onclick="checkvalue()">Envoyer mon message</button>
     <input type="hidden" name="_captcha" value="false" />
     <div class="test">
         <span class="error" id="errorname"></span>
@@ -293,6 +298,25 @@
     <input type="hidden" name="_captcha" value="false" />
     <input type="hidden" name="_next" value="https://khellaf-rachedi.students-laplateforme.io/"/>
         </div>
+        <script>
+          function checkvalue() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            if (
+              name.match(/\S/) &&
+              email.match(/\S/) &&
+              message.match(/\S/)
+            ) {
+              document.getElementById("errorname").innerHTML =
+                "Votre message a bien été envoyé. Merci!";
+            } else {
+              document.getElementById("errorname").innerHTML =
+                "Une erreur est survenue, veuillez réessayer s'il vous plaît!";
+            }
+          }
+        </script>
         </form>
       </div>
     </div>
